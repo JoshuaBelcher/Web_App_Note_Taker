@@ -3,8 +3,7 @@ import moment from 'moment'
 
 let notes = []
 
-//read existing notes from local storage
-
+//load/save existing notes from/to local storage
 const loadNotes = () => {
     const notesJSON = localStorage.getItem('notes')
 

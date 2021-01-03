@@ -1,9 +1,11 @@
 import { createNote } from './notes'
 import { setFilters } from './filters'
 import { renderNotes } from './views'
-   
+
+// render initial display of notes
 renderNotes()
 
+// create necessary event listeners
 document.querySelector('#create-note').addEventListener('click', (e) => {
     const id = createNote()
     location.assign(`/edit.html#${id}`)

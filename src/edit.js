@@ -1,10 +1,12 @@
 import { initializeEditPage, lastEdited } from './views'
 import { updateNote, removeNote } from './notes'
 
+// create variables for edit page HTML elements
 const titleElement = document.querySelector('#note-title')
 const updateElement = document.querySelector('#note-update')
 const bodyElement = document.querySelector('#note-body')
 const removeElement = document.querySelector('#remove-note')
+
 const noteID = location.hash.substring(1)
 
 initializeEditPage(noteID)
